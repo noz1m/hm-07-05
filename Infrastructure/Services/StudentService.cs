@@ -36,7 +36,7 @@ public class StudentService : IStudentService
             Console.WriteLine(result > 0 ? "Success" : "Failed");
         }
     }
-    public void UpdateStudent(Students students)
+    public void UpdateStudents(Students students)
     {
         using (var connection = context.GetDbConnection())
         {
@@ -110,5 +110,4 @@ public class StudentService : IStudentService
             return result;
         }
     }
-    
 }

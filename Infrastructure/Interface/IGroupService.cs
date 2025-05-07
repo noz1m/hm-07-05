@@ -9,5 +9,5 @@ public interface IGroupService
     public List<Groups> GetAllGroup();
     public void CreateGroup(Groups groups);
     public void UpdateGroup(Groups groups);
-    public void DeleteGroup(Groups groups);
+    public void DeleteGroup(int id);
 }

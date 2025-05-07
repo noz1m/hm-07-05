@@ -9,5 +9,5 @@ public interface IStudentService
     public List<Students> GetAllStudents();
     public void CreateStudents(Students students);
     public void UpdateStudents(Students students);
-    public void DeleteStudent(Students students);
+    public void DeleteStudent(int id);
 }

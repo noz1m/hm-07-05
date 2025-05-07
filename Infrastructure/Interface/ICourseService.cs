@@ -1,4 +1,5 @@
 using Domain.DTO;
+using Domain.DTO;
 using Domain.Entities;
 using Infrastructure.Data;
 using Infrastructure.Services;
@@ -9,5 +10,5 @@ public interface ICourseService
     public List<Courses> GetAllCourses();
     public void CreateCourse(Courses courses);
     public void UpdateCourse(Courses courses);
-    public void DeleteCourse(Courses courses);
+    public void DeleteCourse(int id);
 }

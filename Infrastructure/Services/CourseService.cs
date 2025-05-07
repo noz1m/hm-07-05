@@ -44,13 +44,13 @@ public class CourseService : ICourseService
             Console.WriteLine(result > 0 ? "Success" : "Failed");
         }
     }
-    public void DeleteCourse(Courses courses)
+    public void DeleteCourse(int id)
     {
         using (var connection = context.GetDbConnection())
         {
             connection.Open();
             var sql = @$"delete from courses where courses id = @id";
-            var result = connection.Execute(sql, courses);
+            var result = connection.Execute(sql, id);
             Console.WriteLine(result > 0 ? "Success" : "Failed");
         }
     }

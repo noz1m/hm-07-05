@@ -32,7 +32,7 @@ public class MentorService : IMentorService
             Console.WriteLine(result > 0 ? "Success" : "Failed");
         }
     }
-    public void UpdateMentor(Mentors mentors)
+    public void UpdateMentors(Mentors mentors)
     {
         using (var connection = context.GetDbConnection())
         {
@@ -41,7 +41,7 @@ public class MentorService : IMentorService
             Console.WriteLine(result > 0 ? "Success" : "Failed");
         }
     }
-    public void DeleteMentor(int id)
+    public void DeleteMentors(int id)
     {
         using (var connection = context.GetDbConnection())
         {
@@ -61,4 +61,8 @@ public class MentorService : IMentorService
         }
     }
 
+    public void DeleteMentors(Mentors mentors)
+    {
+        throw new NotImplementedException();
+    }
 }

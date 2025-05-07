@@ -67,6 +67,10 @@ public class GroupService : IGroupService
         }
     }
 
+    public void DeleteGroup(Groups groups)
+    {
+        throw new NotImplementedException();
+    }
 }
 
 
