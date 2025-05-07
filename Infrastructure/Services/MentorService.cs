@@ -1,10 +1,11 @@
 using Dapper;
 using Domain.Entities;
 using Infrastructure.Data;
+using Infrastructure.Interface;
 using Npgsql;
 namespace Infrastructure.Services;
 
-public class MentorService
+public class MentorService : IMentorService
 {
     private readonly DataContext context = new DataContext();
     public List<Mentors> GetAllMentors()
@@ -59,5 +60,5 @@ public class MentorService
             return result;
         }
     }
-    
+
 }

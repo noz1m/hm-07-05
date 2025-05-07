@@ -1,10 +1,11 @@
 using Dapper;
 using Domain.Entities;
 using Infrastructure.Data;
+using Infrastructure.Interface;
 using Npgsql;
 namespace Infrastructure.Services;
 
-public class CourseService
+public class CourseService : ICourseService
 {
     private readonly DataContext context = new DataContext();
 

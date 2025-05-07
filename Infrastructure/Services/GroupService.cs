@@ -2,10 +2,11 @@ using System.Security.Cryptography.X509Certificates;
 using Dapper;
 using Domain.Entities;
 using Infrastructure.Data;
+using Infrastructure.Interface;
 using Npgsql;
 namespace Infrastructure.Services;
 
-public class GroupService
+public class GroupService : IGroupService
 {
     private readonly DataContext context = new DataContext();
 
@@ -65,7 +66,7 @@ public class GroupService
             return result;
         }
     }
-    
+
 }
 
 
